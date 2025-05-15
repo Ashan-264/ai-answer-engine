@@ -41,7 +41,7 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
-    description: string;
+    description: React.ReactNode;
     publisher?: string;
     date?: string;
     readTime?: string;
