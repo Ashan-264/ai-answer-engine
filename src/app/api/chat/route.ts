@@ -172,7 +172,7 @@ export async function POST(req: NextRequest) {
       authors: allAuthors,
     });
   } catch (error: unknown) {
-    console.error("Error:", (error as Error).message);
+    console.error("Error in post function:", (error as Error).message);
     return NextResponse.json(
       { error: "Internal server error", details: (error as Error).message },
       { status: 500 }
